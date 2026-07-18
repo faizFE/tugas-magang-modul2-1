@@ -1,11 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tugas Modul 2.1</title>
 </head>
+
 <body>
-    
+    <header>
+        <h1>Sekolah Maju Bersama</h1>
+        <p>Selamat datang di <mark>website resmi</mark> sekolah kami.</p>
+    </header>
+    <nav>
+        <a href="">Tentang Kami</a> |
+        <a href="">Akademik</a> |
+        <a href="">Pendaftaran</a> |
+        <a href="">Galeri</a> |
+        <a href="">Kontak</a>
+    </nav>
+    <main>
+        <section>
+            <h2>Tentang Kami</h2>
+            <h3>Sejarah Singkat</h3>
+            <article>
+                <p>Sekolah kami berdiri sejak tahun 1998 dan telah meluluskan <b>ribuan siswa</b> berprestasi. <br> Kami
+                    percaya bahwa pendidikan adalah <i>kunci masa depan.</i></p>
+                </article>
+        </section>
+        <hr>
+        <section>
+            <h4>Visi</h4>
+            <article>
+                <p>Menjadi lembaga pendidikan terbaik di tingkat nasional.</p>
+            </article>
+            <h5>Misi</h5>
+            <article>
+                <p>Membentuk generasi yang <strong>cerdas</strong> dan <i>berkarakter</i></p>
+            </article>
+            <h6>Motto</h6>
+            <article>
+                <p>Rumus keberhasilan kami: E = mc<sup>2</sup> dan H<sub>2</sub>O untuk semangat belajar.</p>
+            </article>
+            <h6>Contoh Kode Program (Ekstrakurikuler Coding)</h6>
+            <pre>
+                function sapa() {
+                    console.log("Halo siswa!");
+                }
+            </pre>
+        </section>
+        <hr>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th colspan="3">Purchase order: 9854951383</th>
+                    <th>PT.SUKA MAJU - 16 JULY 2026</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="2"><b>Vendor:</b><br>ABC XYZ ltd.<br>DUMMY STREET<br>BUILDING 123<br>BANJARBARU, KCG,
+                        8233420</td>
+                    <td colspan="2"><b>SHIP TO:</b><br>MR.RIO<br>WILSON GARDEN<br>BANJARBARU, LANDASAN ULIN, 8233420
+                    </td>
+                </tr>
+                <tr>
+                    <th>Qty.</th>
+                    <th>Item Code.</th>
+                    <th>Description</th>
+                    <th>Unit Price</th>
+                </tr>
+                <tr>
+                    <td>100</td>
+                    <td>ABCDEF</td>
+                    <td rowspan="2">Pencils</td>
+                    <td>20.000</td>
+                </tr>
+                <tr>
+                    <td>200</td>
+                    <td>FGHIJK</td>
+                    <td>40.000</td>
+                </tr>
+                <tr>
+                    <td>1000</td>
+                    <td>IN222</td>
+                    <td>Notebooks</td>
+                    <td>50.000</td>
+                </tr>
+                <tr>
+                    <td>500</td>
+                    <td>IN111</td>
+                    <td>Pens</td>
+                    <td>15.000</td>
+                </tr>
+                <tr>
+                    <th colspan="3">Subtotal</th>
+                    <td>125.000</td>
+                </tr>
+                <tr>
+                    <th colspan="2">GST</th>
+                    <td>5%</td>
+                    <td>6.250</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="3">Grand Total</th>
+                    <td>131.250</td>
+                </tr>
+            </tfoot>
+        </table>
+        <hr>
+        <section>
+            <h3>Daftar Ekstrakurikuler</h3>
+            <ul>
+                <li>Basket</li>
+                <li>Paduan Suara</li>
+                <li>Klub Coding</li>
+            </ul>
+            <h3>Urutan Tahapan Ujian</h3>
+            <ol>
+                <li>Ujian Harian</li>
+                <li>Ujian Tengah Semester</li>
+                <li>Ujian Akhir Semester</li>
+            </ol>
+            <h3>Istilah Akademik</h3>
+            <dl>
+                <dt>KKM</dt>
+                <dd>Kriteria Ketuntasan Minimal</dd>
+                <dt>Rapor</dt>
+                <dd>Laporan hasil belajar siswa</dd>
+            </dl>
+        </section>
+        <hr>
+        <form>
+            <h1>Formulir Pendaftaran Siswa Baru</h1>
+            <label for="nama">Nama Lengkap:</label>
+            <input type="text" id="nama" name="nama" required>
+            <br>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <br>
+            <label for="tanggal">Tanggal Lahir:</label>
+            <input type="date" name="tanggal_lahir" id="tanggal" required>
+            <br>
+            <br>
+            <label>Jenis Kelamin:</label>
+            <input type="radio" name="Jenis_kelamin" id="laki_laki" required>
+            <label for="laki_laki">Laki-laki</label>
+            <input type="radio" name="Jenis_kelamin" id="perempuan" required>
+            <label for="perempuan">Perempuan</label>
+            <br>
+            <br>
+            <label for="akta">Unggah Akta Kelahiran (PDF):</label>
+            <input type="file" name="akta" id="akta" required>
+            <br>
+            <br>
+            <label for="foto">Unggah Pas Foto:</label>
+            <input type="file" name="foto" id="foto" required>
+            <br>
+            <br>
+            <label for="nomor_hp">Nomor HP:</label>
+            <input type="number" name="nomor" id="nomor_hp" required>
+            <br>
+            <br>
+            <label for="usia">Usia Minimal 6 Tahun:</label>
+            <input type="number" name="usia" id="usia" min="6" required>
+            <br>
+            <br>
+            <button type="submit">Daftar Sekarang</button>
+        </form>
+        <hr>
+        <figure>
+            <h2>Galeri dan Media</h2>
+            <h3>Foto Kegiatan</h3>
+            <img src="https://www.smadwiwarna.sch.id/wp-content/uploads/2021/04/Perpustakaan.jpg"
+                alt="foto kegiatan belajar di perpus">
+            <h3>Sambutan Kepala Sekolah</h3>
+            <audio controls preload="auto">
+                <source src="https://commondatastorage.googleapis.com/codeskulptor-demos/DDR assets/Sevish - nbsp .mp3">
+                tess
+            </audio>
+            <h3>Video Profile Sekolah</h3>
+            <video controls preload="auto">
+                <source src="">
+                tak da video
+            </video>
+            <h3>Lokasi Sekolah</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3645.5533394711797!2d114.82759739678954!3d-3.4411900999999987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2de681d47b0ffd3b%3A0x3b48838a3c931f5b!2sTelkom%20Schools%20-%20SMK%20Telkom%20Banjarbaru!5e1!3m2!1sid!2sid!4v1784009534692!5m2!1sid!2sid" title="ini lokasi sekolah" allowfullscreen></iframe>
+        </figure>
+    </main>
+    <hr>
+    <footer>
+        © 2026 Sekolah Maju Bersama Semua hak dilindungi.
+        <p>Kontak: <a href="">info@sekolahmajubersama.sch.id</a></p>
+    </footer>
 </body>
+
 </html>
