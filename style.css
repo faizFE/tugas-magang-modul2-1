@@ -26,3 +26,15 @@
 #col2 {
     color: blueviolet;
 }
+
+.radio {
+    cursor: pointer;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
