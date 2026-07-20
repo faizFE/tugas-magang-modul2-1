@@ -1,0 +1,28 @@
+.head {
+    color: blue;
+    border: blue;
+}
+
+.body {
+    color: green;
+    border: green;
+}
+
+.foot {
+    background-color: aqua;
+    color: brown;
+    border: aqua;
+}
+
+#subtotal {
+    color: yellow;
+    background-color: black;
+}
+
+#order {
+    border: 1px solid hotpink;
+}
+
+#col2 {
+    color: blueviolet;
+}

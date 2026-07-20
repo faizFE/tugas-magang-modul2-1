@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Tugas Modul 2.1</title>
 </head>
 
@@ -13,14 +14,14 @@
         <p>Selamat datang di <mark>website resmi</mark> sekolah kami.</p>
     </header>
     <nav>
-        <a href="">Tentang Kami</a> |
-        <a href="">Akademik</a> |
-        <a href="">Pendaftaran</a> |
-        <a href="">Galeri</a> |
-        <a href="">Kontak</a>
+        <a href="#tentang">Tentang Kami</a> |
+        <a href="#akademik">Akademik</a> |
+        <a href="#daftar">Pendaftaran</a> |
+        <a href="#galeri">Galeri</a> |
+        <a href="#kontak">Kontak</a>
     </nav>
     <main>
-        <section>
+        <section id="tentang">
             <h2>Tentang Kami</h2>
             <h3>Sejarah Singkat</h3>
             <article>
@@ -50,14 +51,15 @@
             </pre>
         </section>
         <hr>
-        <table border="1">
-            <thead>
+        <table border="1" cellspacing="0" cellpadding="5">
+            <caption>PT. SUKA MAJU</caption>
+            <thead class="head">
                 <tr>
-                    <th colspan="3">Purchase order: 9854951383</th>
-                    <th>PT.SUKA MAJU - 16 JULY 2026</th>
+                    <th colspan="3" id="order">Purchase order: 9854951383</th>
+                    <th id="col2">PT.SUKA MAJU - 16 JULY 2026</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody class="body">
                 <tr>
                     <td colspan="2"><b>Vendor:</b><br>ABC XYZ ltd.<br>DUMMY STREET<br>BUILDING 123<br>BANJARBARU, KCG,
                         8233420</td>
@@ -94,7 +96,7 @@
                     <td>15.000</td>
                 </tr>
                 <tr>
-                    <th colspan="3">Subtotal</th>
+                    <th colspan="3" id="subtotal">Subtotal</th>
                     <td>125.000</td>
                 </tr>
                 <tr>
@@ -103,7 +105,7 @@
                     <td>6.250</td>
                 </tr>
             </tbody>
-            <tfoot>
+            <tfoot class="foot">
                 <tr>
                     <th colspan="3">Grand Total</th>
                     <td>131.250</td>
@@ -111,7 +113,7 @@
             </tfoot>
         </table>
         <hr>
-        <section>
+        <section id="akademik">
             <h3>Daftar Ekstrakurikuler</h3>
             <ul>
                 <li>Basket</li>
@@ -133,7 +135,7 @@
             </dl>
         </section>
         <hr>
-        <form>
+        <form id="daftar">
             <h1>Formulir Pendaftaran Siswa Baru</h1>
             <label for="nama">Nama Lengkap:</label>
             <input type="text" id="nama" name="nama" required>
@@ -173,7 +175,7 @@
             <button type="submit">Daftar Sekarang</button>
         </form>
         <hr>
-        <figure>
+        <figure id="galeri">
             <h2>Galeri dan Media</h2>
             <h3>Foto Kegiatan</h3>
             <img src="https://www.smadwiwarna.sch.id/wp-content/uploads/2021/04/Perpustakaan.jpg"
@@ -193,7 +195,7 @@
         </figure>
     </main>
     <hr>
-    <footer>
+    <footer id="kontak">
         © 2026 Sekolah Maju Bersama Semua hak dilindungi.
         <p>Kontak: <a href="">info@sekolahmajubersama.sch.id</a></p>
     </footer>
