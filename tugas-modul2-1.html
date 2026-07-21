@@ -6,12 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Tugas Modul 2.1</title>
+    <style>
+        #p {
+            font-size: 64px;
+        }
+    </style>
 </head>
 
 <body>
     <header>
-        <h1>Sekolah Maju Bersama</h1>
-        <p>Selamat datang di <mark>website resmi</mark> sekolah kami.</p>
+        <h1 style="color:red;">Sekolah Maju Bersama</h1>
+        <p id="p">Selamat datang di <mark>website resmi</mark> sekolah kami.</p>
     </header>
     <nav>
         <a href="#tentang">Tentang Kami</a> |
@@ -138,11 +143,11 @@
         <form id="daftar">
             <h1>Formulir Pendaftaran Siswa Baru</h1>
             <label for="nama">Nama Lengkap:</label>
-            <input type="text" id="nama" name="nama" placeholder="Masukkan Nama Lengkap" required>
+            <input type="text" id="nama" name="nama" placeholder="Masukkan Nama Lengkap" class="input" required>
             <br>
             <br>
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Masukkan Email" required>
+            <input type="email" id="email" name="email" placeholder="Masukkan Email" class="input" required>
             <br>
             <br>
             <label for="tanggal">Tanggal Lahir:</label>
@@ -150,9 +155,9 @@
             <br>
             <br>
             <label>Jenis Kelamin:</label>
-            <input type="radio" name="Jenis_kelamin" id="laki_laki" class="radio" required>
+            <input type="radio" name="Jenis_kelamin" id="laki_laki" class="jenis" required>
             <label for="laki_laki">Laki-laki</label>
-            <input type="radio" name="Jenis_kelamin" id="perempuan" class="radio" required>
+            <input type="radio" name="Jenis_kelamin" id="perempuan" class="jenis" required>
             <label for="perempuan">Perempuan</label>
             <br>
             <br>
@@ -165,14 +170,14 @@
             <br>
             <br>
             <label for="nomor_hp">Nomor HP:</label>
-            <input type="number" name="nomor" id="nomor_hp" placeholder="Masukkan Nomor Hp" required>
+            <input type="number" name="nomor" id="nomor_hp" placeholder="Masukkan Nomor Hp" class="input" required>
             <br>
             <br>
             <label for="usia">Usia Minimal 6 Tahun:</label>
-            <input type="number" name="usia" id="usia" min="6" placeholder="Masukkan Usia" required>
+            <input type="number" name="usia" id="usia" min="6" placeholder="Masukkan Usia" class="input" required>
             <br>
             <br>
-            <button type="submit">Daftar Sekarang</button>
+            <button type="submit" class="button">Daftar Sekarang</button>
         </form>
         <hr>
         <figure id="galeri">
