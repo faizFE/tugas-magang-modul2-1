@@ -9,26 +9,24 @@ body {
     margin: auto;
     padding: 20px 20px;
     background-color: #FEFFFE;
-    box-shadow: 2px 2px #a5a8ab;
+    box-shadow: 0 5px 20px black;
+    font-family: sans-serif;
 }
 
 .img {
-    display: flex;
-    justify-content: center;
     width: 300px;
     height: 300px;
     border-radius: 10px;
     margin-bottom: 20px;
+    box-shadow: 0 5px 20px black;
 }
 
 .title{
-    font-family: sans-serif;
     font-size: 25px;
     font-weight: bold;
 }
 
 .text {
-    font-family: sans-serif;
     color: gray;
     font-size: 14px;
 }

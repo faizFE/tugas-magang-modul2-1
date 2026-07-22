@@ -1,0 +1,91 @@
+body {
+    background-color: #F5F7F6;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 20px;
+}
+
+.daftar {
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.3);
+    background-color: #fefefe;
+    padding: 20px 20px;
+}
+
+.login {
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.3);
+    background-color: #fefefe;
+    padding: 20px 20px;
+}
+
+h3 {
+    text-align: center;
+    font-size: 24px;
+}
+
+input {
+    width: 96%;
+    border-radius: 5px;
+    height: 35px;
+    margin: 5px 0px 5px 0px;
+    border: 2px solid #E6E6E6;
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
+
+.daftar input:focus {
+    border: 2px solid #4CB050;
+    outline: none;
+}
+
+.login input:focus {
+    border: 2px solid #2196F3;
+    outline: none;
+}
+
+label {
+    font-size: 14px;
+
+}
+
+.button {
+    width: 100%;
+    border-radius: 5px;
+    height: 40px;
+    margin-top: 20px;
+    background-color: #4CB050;
+    color: white;
+    border: none;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #39ff40;
+    color: black;
+    cursor: pointer;
+}
+
+.btn {
+    width: 100%;
+    border-radius: 5px;
+    height: 40px;
+    margin-top: 20px;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #7ac3ff;
+    color: black;
+    cursor: pointer;
+}
