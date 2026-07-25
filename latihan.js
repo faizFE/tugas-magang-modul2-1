@@ -1,4 +1,4 @@
-
+let div = document.querySelector('#div')
 div.style.display = "none";
 
 let button = document.querySelector('#tombol')

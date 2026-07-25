@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-login.css">
+    <title>Login</title>
+</head>
+<body>
+     <div class="login">
+        <form>
+            <h3>Form Login</h3>
+            <label for="email_login">Email</label>
+            <input type="email" id="email_login" placeholder="Email aktif" required>
+            <label for="password_login">Password</label>
+            <input type="password" id="password_login" placeholder="Masukkan password" required>
+            <button type="submit" class="btn" id="btn_masuk">Masuk</button>
+        </form>
+    </div>
+    <script>
+        const button = document.querySelector('.btn')
+       
+
+        function pindah() {
+            if (localStorage.getItem("email") && localStorage.getItem("password")) {
+                window.location.href = "dashboard.html"
+            }
+        }
+
+        pindah()
+
+        button.addEventListener("click", (e) => {
+            console.log("tess")
+            e.preventDefault()
+
+            const email = document.querySelector('#email_login').value
+            const password = document.querySelector('#password_login').value
+
+            if(email == "" || password == "") {
+                alert('masukkan email atau password')
+            }
+            
+            localStorage.setItem("email", email)
+            localStorage.setItem("password", password)
+            console.log(email, password)
+
+            pindah()
+        })
+
+    </script>
+</body>
+</html>

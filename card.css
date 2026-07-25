@@ -1,0 +1,36 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px 0 rgb(0, 0, 0, 0.3);
+    padding: 10px 15px;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+button {
+    width: 100%;
+    background-color: rgb(48, 107, 255);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    height: 40px;
+}
+
+button:hover {
+    background-color: rgb(48, 186, 255);
+    color: black;
+    cursor: pointer;
+}
