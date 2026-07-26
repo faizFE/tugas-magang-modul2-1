@@ -1,54 +1,30 @@
-const name = document.querySelector('#nama')
 const email = document.querySelector('#email')
 const password = document.querySelector('#password')
-const btnRegister = document.querySelector('.button')
+const button = document.querySelector('#btn')
 
-const email_login = document.querySelector('#email_login')
-const password_login = document.querySelector('#password_login')
-const btnLogin = document.querySelector('.btn')
-
-function register () {
-    if(localStorage.getItem('nama') && localStorage.getItem('email') && localStorage.getItem('password')){
-        alert('email berhasil terdaftar')
+function pindahDashboard() {
+    if (email.value == "") {
+        alert("masukkan email anda")
+    } else if (password.value == "") {
+        alert("masukkan password anda")
+    } else if (email.value != localStorage.getItem("email")) {
+        alert("email anda salah")
+    } else if (password.value != localStorage.getItem("password")) {
+        alert("password anda salah")
+    } else {
+        localStorage.setItem("status", "login")
+        alert("berhasil masuk")
+        window.location.href = "dashboard.html"
     }
 }
 
-btnRegister.addEventListener("click", () => {
-    console.log('tes')
+button.addEventListener('click', (e) => {
+    e.preventDefault();
+    console.log('tess')
 
-    console.log(nama.value, email.value, password.value)
-
-    localStorage.setItem('nama', name.value)
-    localStorage.setItem('email', email.value)
-    localStorage.setItem('password', password.value)
-    
-    register()
+    pindahDashboard()
 })
 
-function login(){
-    if (localStorage.getItem('email') === email_login.value && localStorage.getItem('password') === password_login.value) {
-        window.location.href = 'dashboard.html'
-    }
+if (localStorage.getItem("status") === "login") {
+    window.location.href = "dashboard.html"
 }
-
-login()
-
-btnLogin.addEventListener("click", () => {
-    console.log('halo')
-
-    // if(localStorage.getItem('email') !== email_login.value){
-    //     alert('email anda salah')
-    // } else if(localStorage.getItem('password') !== password_login.value) {
-    //     alert('password salah')
-    // } else if (localStorage.getItem('email') === ''){
-    //     alert('masukkan email')
-    // } else if (localStorage.getItem('password') === '') {
-    //     alert('masukkan password')
-    // } else {
-    //     alert('berhasil masuk')
-    //     window.location.href('dashboard.html')
-    // }
-
-    login()
-
-})

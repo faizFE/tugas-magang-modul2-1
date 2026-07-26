@@ -14,8 +14,25 @@
     <div class="card">
         <img src="https://i.pinimg.com/736x/e5/52/65/e552659cec75e06983ccb471eea06800.jpg" alt="gambar aren gentong">
         <h2>Belajar CSS</h2>
-        <p>aksmdknjasndkancjaksndjanjzdnasmnjasnjdnakjnsdjansjdnjasndjasndasndjnasndijwaoijeijsifjdsjfosdjpfserisuidhfyashdu</p>
-        <button>Mulai Belajar</button>
+        <p>testing belajar css layout pakai card</p>
+        <button class="btn">Mulai Belajar</button>
+        <button class="button">Keluar</button>
     </div>
+    <script>
+        const button = document.querySelector('.button')
+
+        button.addEventListener('click', (e) => {
+            e.preventDefault();
+            console.log('tes')
+
+            localStorage.removeItem('status')
+            window.location.href = "login-page.html"
+        })
+
+        if(localStorage.getItem("status") !== "login"){
+            window.location.href = "login-page.html"
+        }
+    </script>
+    <script src="looping.js"></script>
 </body>
 </html>
