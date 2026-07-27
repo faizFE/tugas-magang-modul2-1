@@ -20,9 +20,14 @@ button.addEventListener('click', (e) => {
     e.preventDefault();
     console.log('tess')
 
+    pindahLogin()
     localStorage.setItem("name", name.value)
     localStorage.setItem("email", email.value)
     localStorage.setItem("password", password.value)
-
-    pindahLogin()
+    localStorage.setItem("isregister", "register")
 })
+
+if(localStorage.getItem('isregister') == "register" ) {
+    alert('anda sudah daftar')
+    window.location.href = "login-page.html"
+}

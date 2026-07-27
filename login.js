@@ -28,3 +28,8 @@ button.addEventListener('click', (e) => {
 if (localStorage.getItem("status") === "login") {
     window.location.href = "dashboard.html"
 }
+
+if (localStorage.getItem('isregister') !== 'register') {
+    alert('register terlebih dahulu')
+    window.location.href = "register.html"
+}
